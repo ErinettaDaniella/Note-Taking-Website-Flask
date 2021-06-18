@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- JUMBOTRON -->
+<section class="my-jumbotron">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4"><span>Make Your Notes Here!</span></h1>
+      <a href="{{url_for('create')}}" class="btn btn-primary my-button">Create Note</a>
+    </div>
+  </div>      
+</section>
+<!-- END JUMBOTRON -->
+
+<!-- PANEL -->
+<section class="my-panel">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 my-info-panel">
+        <div class="row">
+          <div class="col-lg">
+            <img src="{{ url_for('static', filename='img/strawberry.jpeg') }}" alt="fast" class="float-left">
+            <h4>Strawberry</h4>
+            <p>Buah stroberi adalah buah semu yang artinya bukan buah yang sebenarnya. Buah stroberi merupakan pembesaran dari jaringan dasar bunga. Buah yang sebenarnya adalah biji-biji berwarna putih dan berukuran kecil yang disebut achen.</p>
+          </div>
+          <div class="col-lg">
+            <img src="{{ url_for('static', filename='img/cool.jpeg') }}" alt="cool" class="float-left">
+            <h4>Meloncat</h4>
+            <p>Kata "meloncat" dalam KBBI adalah gerakan yang dilakukan untuk menjauhi permukaan tanah atau lantai, dilakukan secara vertikal atau ke atas yang menggunakan otot kaki dalam melakukannya. Gerakan melompat dapat dilakukan dengan kedua atau keempat kaki secara bersama-sama seperti katak dan kelinci.</p>
+          </div>
+          <div class="col-lg">
+            <img src="{{ url_for('static', filename='img/bird.jpeg') }}" alt="simple" class="float-left">
+            <h4>Burung</h4>
+            <p>Burung adalah jenis hewan bertulang belakang atau vertebrata yang memiliki bulu dan sayap. Burung biasanya memiliki sayap dengan tubuh ditutupi oleh bulu.</p>
+          </div> 
+        </div>
+
+        
+      </div> 
+    </div>
+
+    <div class="row my-info-panel2">
+
+      <div class="col-lg-6">
+        <img src="{{ url_for('static', filename='img/comfort.jpeg') }}" alt="comfort" class="img-fluid">
+      </div>
+
+      <div class="col-lg-5">
+        <h3>Lorem Ipsum is a dummy or placeholder text.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END PANEL -->
+{% endblock %}
